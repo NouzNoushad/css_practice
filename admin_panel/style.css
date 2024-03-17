@@ -282,3 +282,70 @@ nav .profile_details i{
 	color: #e05260;
 	background-color: #f7d4d7;
 }
+
+.home_content .total_order{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.home_content .sales_boxes{
+	display: flex;
+	justify-content: space-between;
+}
+
+.home_content .sales_boxes .recent_sales{
+	width: 65%;
+	background-color: #fff;
+	padding: 20px 30px;
+	margin: 0 20px;
+	border-radius: 12px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.home_content .sales_boxes .sales_details{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sales_boxes .boxes .title{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.sales_boxes .sales_details li.topic{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.sales_boxes .sales_details li{
+	list-style: none;
+	margin: 8px 0;
+}
+
+.sales_boxes .sales_details li a{
+	font-size: 18px;
+	color: #333;
+	font-size: 400;
+	text-decoration: none;
+}
+
+.sales_boxes .boxes .button{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.sales_boxes .boxes .button a{
+	color: #fff;
+	background-color: #0a2558;
+	padding: 4px 12px;
+	font-size: 15px;
+	font-weight: 400;
+	border-radius: 4px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.sales_boxes .boxes .button a:hover{
+	background-color: #0d3073;
+}
