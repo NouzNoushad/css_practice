@@ -8,6 +8,21 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.btn{
+	background-color: #f05462;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+}
+
 .container{
 	display: flex;
 	height: 100vh;
@@ -21,8 +36,11 @@
 .sidebar .brand_name{
 	padding: 10px;
 	width: 100%;
-	text-align: center;
-	font-size: 1.2rem;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
 	color: palevioletred;
 	font-weight: 500;
 }
@@ -48,4 +66,62 @@
 
 .home_section{
 	width: calc(100% - 240px);
+}
+
+.home_section .header{
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: calc(100% - 240px);
+}
+
+.home_section .header .nav{
+	width: 90%;
+	display: flex;
+	align-items: center;
+}
+
+.home_section .header .nav .search{
+	flex: 3;
+	display: flex;
+	justify-content: center;
+}
+
+.home_section .header .nav .search input[type=text]{
+	background-color: #f1f1f1;
+	padding: 10px;
+	width: 50%;
+	border: none;
+	outline: none;
+}
+
+.home_section .header .nav .search button{
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home_section .header .nav .search button img{
+	width: 30px;
+	height: 30px;
+}
+
+.home_section .header .nav .user {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home_section .header .nav .user img{
+	width: 40px;
+	height: 40px;
 }
