@@ -125,3 +125,30 @@ a{
 	width: 40px;
 	height: 40px;
 }
+
+.home_section .content{
+	position: relative;
+	margin-top: 10vh;
+	background-color: #f1f1f1;
+	min-height: 90vh;
+}
+
+.home_section .content .cards{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 15px;
+	flex-wrap: wrap;
+}
+
+.home_section .content .cards .card{
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+	0 6px 20px rgba(0, 0, 0, 0.19);
+	width: calc(100%/4 - 15px);
+	display: flex;
+	height: 150px;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 8px;
+}
