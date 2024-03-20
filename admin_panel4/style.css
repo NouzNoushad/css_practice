@@ -7,3 +7,45 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+
+.container{
+	display: flex;
+	height: 100vh;
+}
+
+.sidebar{
+	width: 240px;
+	background-color: pink;
+}
+
+.sidebar .brand_name{
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	color: palevioletred;
+	font-weight: 500;
+}
+
+.sidebar .nav_links{
+	list-style: none;
+}
+
+.sidebar li{
+	display: flex;
+	margin: 10px 0;
+	padding: 10px 25px;
+	gap: 15px;
+}
+
+.sidebar li.active{
+	background-color: rgb(252, 138, 157);
+}
+
+.sidebar li:hover{
+	background-color: rgb(252, 138, 157);
+}
+
+.home_section{
+	width: calc(100% - 240px);
+}
