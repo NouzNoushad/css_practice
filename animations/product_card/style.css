@@ -138,7 +138,7 @@ body {
     overflow: hidden;
     height: 100%;
     width: 45%;
-    float: right;
+    /* float: right; */
 }
 
 .info {
