@@ -276,6 +276,47 @@ label .close_btn {
     font-size: 17px;
 }
 
+/* Why Us Section */
+.why_us {
+    background-color: var(--light-gray-color);
+    padding: 60px 20px 120px;
+}
+
+.why_us .why_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.why_container .why_items img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.why_container .why_items {
+    width: calc(100% / 3 - 80px);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.why_items .why_us_text {
+    text-align: center;
+}
+
+.why_items .why_us_text h3 {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.why_items .why_us_text p {
+    font-size: 17px;
+}
+
 /* Media Query : max-width: 1024px */
 @media screen and (max-width: 1024px) {
     nav {
@@ -368,6 +409,15 @@ label .close_btn {
     .section_container .services_items {
         width: calc(100% /2 - 50px);
     }
+
+    /* Why us section */
+    .why_us .why_container {
+        gap: 50px;
+    }
+
+    .why_container .why_items {
+        width: calc(100% /2 - 50px);
+    }
 }
 
 /* Media Query : max-width 576px */
@@ -410,12 +460,14 @@ label .close_btn {
         font-size: 15px !important;
     }
 
-    .section_container .services_items {
+    .section_container .services_items,
+    .why_container .why_items {
         width: 100%;
         text-align: center;
     }
 
-    .services .service_container {
+    .services .service_container,
+    .why_us .why_container {
         gap: 70px;
     }
 
