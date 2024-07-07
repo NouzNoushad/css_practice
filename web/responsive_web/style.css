@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -239,6 +239,42 @@ label .close_btn {
     width: 100%;
 }
 
+/* Services Section */
+.services {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 60px 20px 120px;
+}
+
+.services .service_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section_container .services_items img {
+    width: 100%;
+}
+
+.section_container .services_items {
+    width: calc(100% / 3 - 120px);
+}
+
+.services_items .services_text {
+    text-align: center;
+}
+
+.services_items .services_text h3 {
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.services_items .services_text p {
+    font-size: 17px;
+}
 
 /* Media Query : max-width: 1024px */
 @media screen and (max-width: 1024px) {
@@ -263,21 +299,21 @@ label .close_btn {
         transition: all 0.15s ease;
     }
 
-    #click:checked ~ ul {
+    #click:checked~ul {
         left: 0;
     }
 
-    #click:checked ~ label .close_btn {
+    #click:checked~label .close_btn {
         display: block;
     }
 
-    #click:checked ~ label .menu_btn {
+    #click:checked~label .menu_btn {
         display: none;
     }
 
     nav ul li {
         display: block;
-        padding: 8px 12px ;
+        padding: 8px 12px;
         width: 48%;
         margin: 24px auto;
     }
@@ -323,6 +359,15 @@ label .close_btn {
     .about_container .text_section {
         max-width: 100%;
     }
+
+    /* Service section */
+    .services .service_container {
+        gap: 50px;
+    }
+
+    .section_container .services_items {
+        width: calc(100% /2 - 50px);
+    }
 }
 
 /* Media Query : max-width 576px */
@@ -351,6 +396,7 @@ label .close_btn {
     .hero_container .image_section img {
         max-width: 80%;
     }
+
     .hero_container .text_section p {
         font-size: 17px;
     }
@@ -362,5 +408,18 @@ label .close_btn {
     .button {
         padding: 10px 20px !important;
         font-size: 15px !important;
+    }
+
+    .section_container .services_items {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services .service_container {
+        gap: 70px;
+    }
+
+    .section_container .services_items img {
+        max-width: 80%;
     }
 }
